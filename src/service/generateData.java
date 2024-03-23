@@ -11,9 +11,10 @@ public class generateData {
 	private List<Product> productos;
 
 	public generateData() {
-		sellers = new ArrayList();
-		productos=new ArrayList();
+		sellers = new ArrayList<Seller>();
+		productos = new ArrayList<Product>();
 	}
+
 	public List<Seller> getSellers() {
 		return sellers;
 	}
@@ -22,7 +23,6 @@ public class generateData {
 		return productos;
 	}
 
-	
 	public void addSeller(int id, String name, String document) {
 		Seller seller = new Seller();
 		seller.setId(id);
@@ -39,6 +39,5 @@ public class generateData {
 		product.setPrice(price);
 		productos.add(product);
 	}
-	
 
 }
