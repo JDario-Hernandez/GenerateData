@@ -11,25 +11,25 @@ public class generate {
 		// TODO Auto-generated method stub
 		generateData data = new generateData();
 
-		data.addSeller(1, "Kevin Figueroa", "423131854");
+		data.addSeller(1, "Kevin", "Figueroa", "423131854");
 
 		data.addProductoSold(1, "Televisor", 45000, 1);
 		data.addProductoSold(2, "Nevera", 55000, 1);
 		data.addProductoSold(3, "Celular", 435000, 1);
 
-		data.addSeller(2, "Lorena", "231318541");
+		data.addSeller(2, "Lorena", "Ortiz", "231318541");
 
 		data.addProductoSold(4, "Televisor", 45000, 2);
 		data.addProductoSold(5, "Nevera", 55000, 2);
 		data.addProductoSold(6, "Celular", 435000, 2);
 
-		data.addSeller(3, "Nicolas", "23131854615");
+		data.addSeller(3, "Sebastian", "Serrato", "23131854615");
 
 		data.addProductoSold(7, "Televisor", 45000, 3);
 		data.addProductoSold(8, "Nevera", 55000, 3);
 		data.addProductoSold(9, "Celular", 435000, 3);
 
-		data.addSeller(4, "Jurgen Hernandez", "231214547");
+		data.addSeller(4, "Jurgen", "Hernandez", "231214547");
 		data.addProductoSold(10, "Televisor", 45000, 4);
 		data.addProductoSold(11, "Nevera", 55000, 4);
 		data.addProductoSold(12, "Celular", 435000, 4);
@@ -49,9 +49,10 @@ public class generate {
 				break;
 			case "3":
 				String name = JOptionPane.showInputDialog(null, "escriba nombre del vendedor");
+				String lastname = JOptionPane.showInputDialog(null, "escriba apellido del vendedor");	
 				String document = JOptionPane.showInputDialog(null, "escriba documento del vendedor");
 
-				data.addSeller(data.getSellers().size() + 1, name, document);
+				data.addSeller(data.getSellers().size() + 1, name, lastname, document);
 				break;
 			case "4":
 				String idSellerSelection = JOptionPane.showInputDialog(null, "escriba id del vendedor");
