@@ -23,10 +23,11 @@ public class generateData {
 		return productos;
 	}
 
-	public void addSeller(int id, String name, String document) {
+	public void addSeller(int id, String name, String lastname, String document) {
 		Seller seller = new Seller();
 		seller.setId(id);
 		seller.setName(name);
+		seller.setLastname(lastname);
 		seller.setDocument(document);
 		sellers.add(seller);
 	}
