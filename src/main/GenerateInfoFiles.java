@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 import model.Product;
 import service.generateData;
 
-public class generate {
+public class GenerateInfoFiles {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
