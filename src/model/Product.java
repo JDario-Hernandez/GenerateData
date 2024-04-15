@@ -4,7 +4,13 @@ public class Product {
 	private int id;
 	private String name;
 	private int price;
-	private int idSeller;
+
+	public Product(int id, String name, int price) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.price = price;
+	}
 
 	public int getId() {
 		return id;
@@ -29,13 +35,4 @@ public class Product {
 	public void setPrice(int price) {
 		this.price = price;
 	}
-
-	public int getIdSeller() {
-		return idSeller;
-	}
-
-	public void setIdSeller(int idSeller) {
-		this.idSeller = idSeller;
-	}
-
 }
