@@ -6,6 +6,15 @@ public class Seller {
 	private String lastname;
 	private String document;
 
+	
+	public Seller(int id, String name, String lastname, String document) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.lastname = lastname;
+		this.document = document;
+	}
+
 	public int getId() {
 		return id;
 	}
